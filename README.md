@@ -1,5 +1,4 @@
-![alt text](https://dockerbuildbadges.quelltext.eu/status.svg?organization=cyberto&repository=docker-armhf-resilio
- "Dockerhub")
+![alt text](https://dockerbuildbadges.quelltext.eu/status.svg?organization=cyberto&repository=docker-armhf-resilio "Dockerhub")
 
 Resilio Sync Docker image for the Raspberry Pi with Resins cross build!
 ---
