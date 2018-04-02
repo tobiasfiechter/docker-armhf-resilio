@@ -18,4 +18,4 @@ docker run -d --name Sync \
   cyberto/docker-armhf-resilio
 ```
 
-then visit http://raspberrypi.local:8888 (on Windows without Zeroconf replace `raspberrypi.local` with your hostname) to setup
+then visit http://raspberrypi.local:8888 (on Windows without Zeroconf replace `raspberrypi.local` with the hostname or IP of your Raspberry Pi) to setup
