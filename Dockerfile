@@ -4,7 +4,7 @@ RUN [ "cross-build-start" ]
 
 # - RESILIO SYNC - #
 
-ENV RESILIO_VERSION=2.6.3
+ENV RESILIO_VERSION=2.6.4
 ENV RESILIO_URL=https://download-cdn.resilio.com/${RESILIO_VERSION}/linux-armhf/resilio-sync_armhf.tar.gz
 
 ADD ${RESILIO_URL} /tmp/sync.tgz
