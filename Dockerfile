@@ -1,15 +1,15 @@
-FROM resin/armv7hf-debian-qemu
+FROM balenalib/armv7hf-debian
 
 RUN [ "cross-build-start" ]
 
 # - RESILIO SYNC - #
 
-ENV RESILIO_VERSION=2.7.0
-ENV RESILIO_URL=https://download-cdn.resilio.com/${RESILIO_VERSION}/linux-armhf/resilio-sync_armhf.tar.gz
+ENV RESILIO_VERSION=2.7.3.1381
+ENV RESILIO_URL=https://download-cdn.resilio.com/${RESILIO_VERSION}/Debian/resilio-sync_${RESILIO_VERSION}-1_armhf.deb
 
-ADD ${RESILIO_URL} /tmp/sync.tgz
+ADD ${RESILIO_URL} /tmp/sync.deb
 
-RUN tar -xf /tmp/sync.tgz -C /usr/bin rslsync && rm -f /tmp/sync.tgz
+RUN dpkg -i /tmp/sync.deb && rm -f /tmp/sync.deb
 
 COPY sync.conf.default /etc/
 COPY run_sync /usr/bin/
